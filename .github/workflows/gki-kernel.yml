@@ -260,8 +260,8 @@ jobs:
             patch -p1 -F 3 < syscall_hooks.patch
           fi
 
-          #  cp ../../SukiSU_patch/other/lz4k_patch/${{ inputs.kernel_version }}/lz4kd.patch ./
-          #  patch -p1 -F 3 < lz4kd.patch || true
+            cp ../../SukiSU_patch/other/lz4k_patch/${{ inputs.kernel_version }}/lz4kd.patch ./
+            patch -p1 -F 3 < lz4kd.patch || true
           
       - name: Apply Hide Stuff Patches
         run: |
